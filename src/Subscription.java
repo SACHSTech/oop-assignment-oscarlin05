@@ -8,5 +8,8 @@ public class Subscription {
         return strSubscriptionType;
     }
 
-    
+    public int getAmountUsers() {
+        return intAmountUsers;
+    }
+
 }
