@@ -12,4 +12,8 @@ public class Subscription {
         return intAmountUsers;
     }
 
+    public int getBalance() {
+        return intBalance;
+    }
+
 }
