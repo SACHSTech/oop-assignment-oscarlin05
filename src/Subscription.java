@@ -15,5 +15,8 @@ public class Subscription {
     public int getBalance() {
         return intBalance;
     }
-
+    
+    public String toString() {
+        return "You have purchased" + strSubscriptionType + "with" + intAmountUsers + "amount of users.";
+    }
 }
