@@ -16,7 +16,15 @@ public class Shows extends Medias {
      */
     public Shows(String strMediaName, String strDirectorName, String strGenre, int intFilmYear, int numSeason) {
         super(strMediaName, strDirectorName, strGenre, intFilmYear);
-
     }
+
+    /**
+     * 
+     * @return the number of seasons 
+     */
+    public int getNumSeasons() {
+        return intNumSeason;
+    }
+
 
 }
