@@ -39,4 +39,12 @@ public abstract class Medias {
         return strDirectorName;
     }
 
+    /**
+     * 
+     * @return genre 
+     */
+    public String getGenre() {
+        return strGenre;
+    }
+
 }
