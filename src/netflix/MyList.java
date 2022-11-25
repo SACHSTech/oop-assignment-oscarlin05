@@ -52,5 +52,12 @@ public class MyList {
         return blnCanAddShow;
     }
 
+    /**
+     * 
+     * @return if movie can still be added
+     */
+    public boolean getCanAddMovie() {
+        return blnCanAddMovie;
+    }
     
 }
