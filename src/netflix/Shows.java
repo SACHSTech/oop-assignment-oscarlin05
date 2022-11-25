@@ -14,7 +14,7 @@ public class Shows extends Medias {
      * @param intFilmYear: displays film year 
      * @param numSeason: displays the season from the show 
      */
-    public Shows(String strMediaName, String strDirectorName, String strGenre, int intFilmYear, int numSeason) {
+    public Shows(String strMediaName, String strDirectorName, String strGenre, int intFilmYear, boolean ageRestriction, int numSeason) {
         super(strMediaName, strDirectorName, strGenre, intFilmYear);
     }
 
