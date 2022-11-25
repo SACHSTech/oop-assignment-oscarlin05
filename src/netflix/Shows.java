@@ -34,4 +34,11 @@ public class Shows extends Medias {
         this.intNumSeason = intNumSeason;
     }
 
+     /**
+      * display information about shows
+      */
+      public void information() {
+        System.out.println("Show: " + super.getMediaName() + "\n Genre: " + super.getGenre() + "\n Season: " + intNumSeason);
+    }
+
 }
