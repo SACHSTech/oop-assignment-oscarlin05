@@ -36,5 +36,21 @@ public class MyList {
         return intMaxMovie;
     }
 
+    /**
+     * 
+     * @return get maximum amount of shows that user can add 
+     */
+    public int getMaxShow() {
+        return intMaxShow;
+    }
+
+    /**
+     * 
+     * @return if show can still be added 
+     */
+    public boolean getCanAddShow() {
+        return blnCanAddShow;
+    }
+
     
 }
