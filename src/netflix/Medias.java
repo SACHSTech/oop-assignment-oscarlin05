@@ -22,4 +22,14 @@ public abstract class Medias {
         this.strGenre = strGenre;
         this.intFilmYear = intFilmYear;
     }
+
+    /**
+     * 
+     * @return media name 
+     */
+    public String getMediaName() {
+        return strMediaName;
+    }
+ 
+
 }
