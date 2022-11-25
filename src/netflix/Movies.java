@@ -10,6 +10,14 @@ public class Movies extends Medias {
         super(strMediaName, strDirectorName, strGenre, intFilmYear);
     }
 
+    /**
+     * 
+     * @return user agerestriction
+     */
+    public boolean getRestriction() {
+        return blnAgeRestriction;
+    }
+
 
 }
 
