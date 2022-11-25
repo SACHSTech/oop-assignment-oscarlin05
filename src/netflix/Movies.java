@@ -18,6 +18,12 @@ public class Movies extends Medias {
         return blnAgeRestriction;
     }
 
+    /**
+     * show information
+     */
+    public void information() {
+        System.out.println("Movie Title: " + super.getMediaName());
+    }
 
 }
 
