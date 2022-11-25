@@ -7,7 +7,7 @@ public class User {
     private boolean blnMaturity; 
 
     /**
-     * 
+     * set constructor 
      * @param nickname: the user's nickname 
      * @param age: the user's age
      * @param mature: the user's maturity 
