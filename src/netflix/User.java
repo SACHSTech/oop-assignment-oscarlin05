@@ -26,4 +26,13 @@ public class User {
         return strNickname;
     }
 
+    /**
+     * 
+     * @return the age of the user
+     */
+    public int getAge() {
+        return intAge;
+    }
+
+
 }
