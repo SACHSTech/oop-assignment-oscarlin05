@@ -47,4 +47,19 @@ public abstract class Medias {
         return strGenre;
     }
 
+    /**
+     * 
+     * @return the film year 
+     */
+    public int getFilmYear() {
+        return intFilmYear;
+    }
+
+    /**
+     * display the media information
+     */
+    public void information() {
+        
+    }
+
 }
