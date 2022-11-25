@@ -30,6 +30,13 @@ public abstract class Medias {
     public String getMediaName() {
         return strMediaName;
     }
- 
+    
+    /**
+     * 
+     * @return director name 
+     */
+    public String getDirectorName() {
+        return strDirectorName;
+    }
 
 }
