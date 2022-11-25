@@ -34,5 +34,12 @@ public class User {
         return intAge;
     }
 
+    /**
+     * 
+     * @return the maturity of the user 
+     */
+    public boolean getMaturity() {
+        return blnMaturity;
+    }
 
 }
