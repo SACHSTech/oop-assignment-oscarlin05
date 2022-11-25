@@ -26,5 +26,12 @@ public class Shows extends Medias {
         return intNumSeason;
     }
 
+    /**
+     * 
+     * @param intNumSeason allow user to change the seasons 
+     */
+    public void setNumSeasons(int intNumSeason) {
+        this.intNumSeason = intNumSeason;
+    }
 
 }
