@@ -18,5 +18,12 @@ public class User {
         blnMaturity = mature;
     }
 
+    /**
+     * 
+     * @return the nickname of the user 
+     */
+    public String getNickname() {
+        return strNickname;
+    }
 
 }
