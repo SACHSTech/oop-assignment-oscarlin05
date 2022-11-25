@@ -28,5 +28,13 @@ public class MyList {
         }
     }
 
+    /**
+     * 
+     * @return get maximum amount of movie that user can add 
+     */
+    public int getMaxMovie() {
+        return intMaxMovie;
+    }
+
     
 }
