@@ -12,10 +12,10 @@ public class User {
      * @param age: the user's age
      * @param mature: the user's maturity 
      */
-    public User(String nickname, int age, boolean mature) {
-        strNickname = nickname;
-        intAge = age;
-        blnMaturity = mature;
+    public User(String strNickname, int intAge, boolean blnMaturity) {
+        this.strNickname = strNickname;
+        this.intAge = intAge;
+        this.blnMaturity = blnMaturity;
     }
 
     /**

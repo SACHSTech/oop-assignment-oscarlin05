@@ -37,7 +37,7 @@ public class Shows extends Medias {
      /**
       * display information about shows
       */
-      public void information() {
+      public void getinformation() {
         System.out.println("Show: " + super.getMediaName() + "\n Genre: " + super.getGenre() + "\n Season: " + intNumSeason);
     }
 
