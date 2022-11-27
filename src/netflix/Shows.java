@@ -34,11 +34,15 @@ public class Shows extends Medias {
         this.intNumSeason = intNumSeason;
     }
 
+    public void getInformation() {
+        System.out.println("Show: " + super.getMediaName() + " directed by: " + super.getDirectorName() + " filmed in " + super.getFilmYear() + " Genre: " + super.getGenre() + "Seasons: " + getNumSeasons());
+    }
+
      /**
-      * display information about shows
+      * display object in string
       */
-      public void getinformation() {
-        System.out.println("Show: " + super.getMediaName() + "\n Genre: " + super.getGenre() + "\n Season: " + intNumSeason);
+      public String toString() {
+        return "Show: " + super.getMediaName() +" | ";
     }
 
 }

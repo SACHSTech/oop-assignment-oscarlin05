@@ -1,63 +1,89 @@
 package netflix;
+import java.io.*;
+import java.util.ArrayList;
+
+import javax.swing.event.ListSelectionEvent;
 
 public class MyList {
+    
+    // create arraylist for the movies and shows 
+    private ArrayList<Movies> unrestrictedMovieList = new ArrayList<>();
+    private ArrayList<Shows> unrestricedShowList = new ArrayList<>();
 
-    // Instance variables 
-    private int intMaxShow;
-    private int intMaxMovie;
-    private boolean blnCanAddShow;
-    private boolean blnCanAddMovie;
+    private ArrayList<Movies> movieLists = new ArrayList<>();
+    private ArrayList<Shows> showLists = new ArrayList<>();
 
-    // set constructor 
-    public MyList(int show, int movie) {
-        intMaxShow = show;
-        intMaxMovie = movie;
+    // object movies
+    Movies smile = new Movies("Smile", "Parker Finn", "Horror", 2022, true);
+    Movies minions = new Movies("Minions: The Rise of Gru", "Kyle Balda", "Comedy", 2022, false);
+    Movies blackAdam = new Movies("Black Adam", "Jaume Collet-Serra", "Action", 2022, false);
+    Movies spiderman = new Movies("Spider-Man: No Way Home", "Jon Watts", "Fantasy", 2021, false);
+    Movies jumanji = new Movies("Jumanji: Welcome to the Jungle", "Jake Kasdan", "Adventure", 2017, false);
 
-        if (intMaxShow == 3) {
-            blnCanAddShow = false;
-        }
-        else {
-            blnCanAddShow = true;
-        }
+    // object shows
+    Shows walkingDead = new Shows("The Walking Dead", "Greg Nicotero", "Horror", 2022, true, 11);
+    Shows strangerThings = new Shows("Stranger Things", "Shawn Levy", "Action", 2022, false, 4);
+    Shows lucifer = new Shows("Lucifer", "Len Wiseman", "Fantasy", 2021, false, 6);
+    Shows mrbean = new Shows("Mr. Bean", "John Howard Davies", "Comedy", 1990, false, 0);
+    Shows thirteenReasonsWhy = new Shows("13 Reasons Why", "Thomas Joseph McCarthy", "Adventure", 2020, true, 4);
 
-        if (intMaxMovie == 3) {
-            blnCanAddMovie = false;
-        }
-        else {
-            blnCanAddMovie = true;
-        }
-    }
+    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
-    /**
-     * 
-     * @return get maximum amount of movie that user can add 
-     */
-    public int getMaxMovie() {
-        return intMaxMovie;
-    }
+    // set constructor and add movies to the lists
+    public MyList() {
+        showLists.add(walkingDead);
+        showLists.add(strangerThings);
+        showLists.add(lucifer);
+        showLists.add(mrbean);
+        showLists.add(thirteenReasonsWhy);
 
-    /**
-     * 
-     * @return get maximum amount of shows that user can add 
-     */
-    public int getMaxShow() {
-        return intMaxShow;
-    }
+        movieLists.add(smile);
+        movieLists.add(minions);
+        movieLists.add(blackAdam);
+        movieLists.add(spiderman);
+        movieLists.add(jumanji);
 
-    /**
-     * 
-     * @return if show can still be added 
-     */
-    public boolean getCanAddShow() {
-        return blnCanAddShow;
-    }
+        unrestrictedMovieList.add(minions);
+        unrestrictedMovieList.add(blackAdam);
+        unrestrictedMovieList.add(spiderman);
+        unrestrictedMovieList.add(jumanji);
 
-    /**
-     * 
-     * @return if movie can still be added
-     */
-    public boolean getCanAddMovie() {
-        return blnCanAddMovie;
+        unrestricedShowList.add(strangerThings);
+        unrestricedShowList.add(lucifer);
+        unrestricedShowList.add(mrbean);
+
     }
     
+    /**
+     * 
+     * @return the show list in the array list 
+     */
+    public ArrayList<Shows> getShowList() {
+        return showLists;
+    }
+
+    /**
+     * 
+     * @return the movie list in the array list 
+     */
+    public ArrayList<Movies> getMovieList() {
+        return movieLists;
+    }
+
+    /**
+     * 
+     * @return the restricted show list in the array list 
+     */
+    public ArrayList<Shows> getRestricedShowList() {
+        return unrestricedShowList;
+    }
+
+    /**
+     * 
+     * @return the restricted movie list in the array list 
+     */    
+    public ArrayList<Movies> getRestrictedMovieList() {
+        return unrestrictedMovieList;
+    }
+
 }

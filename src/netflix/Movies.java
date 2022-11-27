@@ -32,5 +32,12 @@ public class Movies extends Medias {
         System.out.println("Movie: " + super.getMediaName() + " directed by: " + super.getDirectorName() + " filmed in " + super.getFilmYear() + " Genre: " + super.getGenre());
     }
 
+    /**
+     * print out object in string 
+     */
+    public String toString() {
+        return "Movie: " + super.getMediaName() + " | ";
+    }
+
 }
 

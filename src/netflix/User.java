@@ -1,10 +1,14 @@
 package netflix;
+import java.io.*;
+
 public class User {
 
     // Instance variables 
     private String strNickname;
     private int intAge;
     private boolean blnMaturity; 
+
+    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
     /**
      * set constructor 
@@ -34,6 +38,23 @@ public class User {
         return intAge;
     }
 
+    /**
+     * 
+     * @throws IOException read line for user nickname
+     */
+    public void setNickname() throws IOException {
+            strNickname = input.readLine();
+        }
+    
+
+    /**
+     * 
+     * @throws IOException read line for user age
+     */
+    public void setAge() throws IOException {
+            intAge = Integer.parseInt(input.readLine());
+        }
+    
     /**
      * 
      * @return the maturity of the user 
