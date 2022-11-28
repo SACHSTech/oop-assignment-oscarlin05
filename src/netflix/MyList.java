@@ -2,8 +2,6 @@ package netflix;
 import java.io.*;
 import java.util.ArrayList;
 
-import javax.swing.event.ListSelectionEvent;
-
 public class MyList {
     
     // create arraylist for the movies and shows 

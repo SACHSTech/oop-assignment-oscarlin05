@@ -58,7 +58,7 @@ public abstract class Medias {
     /**
      * display the media information
      */
-    public void information() {
+    public void Information() {
         
     }
 

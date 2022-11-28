@@ -34,7 +34,7 @@ public class Shows extends Medias {
         this.intNumSeason = intNumSeason;
     }
 
-    public void getInformation() {
+    public void Information() {
         System.out.println("Show: " + super.getMediaName() + " directed by: " + super.getDirectorName() + " filmed in " + super.getFilmYear() + " Genre: " + super.getGenre() + "Seasons: " + getNumSeasons());
     }
 
@@ -42,7 +42,7 @@ public class Shows extends Medias {
       * display object in string
       */
       public String toString() {
-        return "Show: " + super.getMediaName() +" | ";
+        return "Show: " + super.getMediaName() + ", directed by: " + super.getDirectorName() + ", filmed in " + super.getFilmYear() + ", Genre: " + super.getGenre() +" | ";
     }
 
 }
